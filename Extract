@@ -1,0 +1,6 @@
+Public Class ExtractFirstNameForm
+Private Sub DetermineButton_Click(ByVal sender As Object, ByVal e As EventArgs) Handles DetermineButton.Click Dim name As String name = FullNameTextBox.Text Call FirstName(name) 
+End Sub 
+Private Sub FirstName(ByVal name As String) Dim firstSpace As Integer firstSpace = name.IndexOf(" ") 
+FirstNameTextBox.Text = name.Substring(0, firstSpace) End Sub 
+End Class 
