@@ -1,0 +1,12 @@
+Public Class ComputeNumbersForm 
+ 
+Private Sub SumandAverageButton_Click(ByVal sender As Object, ByVal e As EventArgs) 
+Handles SumandAverageButton.Click 
+Dim Number1Integer, Number2Integer As Integer 
+Dim SumInteger As Integer, AverageSingle As Single 
+Number1Integer = Integer.Parse(InputBox("Enter the first number", "Inputs")) 
+Number2Integer = Integer.Parse(InputBox("Enter the second number", "Inputs")) 
+SumInteger = Number1Integer + Number2Integer 
+AverageSingle = Convert.ToSingle(SumInteger) / 2 
+MessageBox.Show("Sum is " & SumInteger.ToString() & ControlChars.NewLine & "Average is " & AverageSingle.ToString(), "Results", MessageBoxButtons.OK, MessageBoxIcon.Information) End Sub 
+End Class 
